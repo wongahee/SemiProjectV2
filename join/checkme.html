@@ -125,23 +125,25 @@
 
         <div class="card card-body bg-light">
             <h3>실명확인 회원가입</h3>
-            <form class="checkfrm2" name="checkfrm2">
+            <form id="checkfrm2" name="checkfrm2">
                 <div class="row">
-                    <div class="col-5 offset-1">
+                    <div class="col-5 offset-1"><!--앞한칸띄우기-->
                         <div class="form-group row">
-                            <label class="col-4 col-form-label text-right text-warning" for="name">이름</label>
-                            <input type="text" name="name" id="name" class="form-control col-6 border-warning">
+                            <label class="col-4 col-form-label text-right text-warning" for="name2">이름</label>
+                            <input type="text" name="name" id="name2" class="form-control col-6 border-warning">
                         </div>
                         <div class="form-group row">
-                            <label class="col-4 col-form-label text-right text-warning">주민번호</label>
-                            <input type="text" name="bnum1" id="bnum1" class="col-3 border-warning form-control">&nbsp;
-                            <i class="fas fa-minus"></i>&nbsp;
-                            <input type="text" name="bnum2" id="bnum2" class="col-3 border-warning form-control">
+                            <label class="col-4 col-form-label text-right text-warning" for="jimin1">주민번호</label>
+                            <input type="text" name="jimin1" id="jimin1" class="col-3 border-warning form-control">
+                            <span class="col-form-label">&nbsp;&mdash;&nbsp;</span><!-- 중앙으로 내리기 -->
+                            <input type="text" name="jimin2" id="jimin2" class="col-3 border-warning form-control">
                         </div>
                         <div class="form-group row">
                             <label class="col-4"></label>
-                            <input type="checkbox">
-                            <p class="text-warning">&nbsp;주민등록번호 처리에 동의합니다.</p>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" id="chkjumin" name="chkjumin" value="y" class="custom-control-input">
+                                <label class="custom-control-label text-warning" for="chkjumin">&nbsp;주민등록번호 처리에 동의합니다.</label>
+                            </div>
                         </div>
                     </div>
                     <div class="col-5">
@@ -152,7 +154,7 @@
                             <li>개인정보보호법에 따라<span class="text-danger">이용동의</span>를 받습니다.</li>
                         </ul>
                     </div>
-                </div><!-- 실명확인 입력폼 -->
+                </div><!-- 실명확인 입력폼-->
 
                 <div class="row">
                     <div class="col text-center">
@@ -160,9 +162,7 @@
                         <button type="button" class="btn btn-primary"><i class="fas fa-check"></i> 확인하기</button>
                         <button type="button" class="btn btn-danger"><i class="fas fa-times"></i>취소하기</button>
                     </div>
-                </div>
-
-
+                </div><!-- 버튼들 -->
             </form>
         </div><!-- 실명 회원가입 -->
 
